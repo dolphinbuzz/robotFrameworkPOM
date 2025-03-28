@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-03-26T18:49:05.498590" rpa="false" schemaversion="5">
+<suite id="s1" name="testSuite01" source="D:\Bibliotecas\Documentos\github\robotFrameWorkPOM\robotFrameworkPOM\tests\testSuite01.robot">
+<test id="s1-t1" name="Cenário 1: Realizar login" line="10">
+<kw name="Given que acesso a pagina inicial" owner="homePage">
+<kw name="Abro o Navegador" owner="common">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-26T18:49:06.134170" level="INFO">Opening browser 'Chrome' to base url 'https://letcode.in/test'.</msg>
+<arg>${url}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-26T18:49:06.133964" elapsed="3.037446"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-03-26T18:49:09.171607" elapsed="0.044185"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${titulo}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-03-26T18:49:09.215959" elapsed="0.039684"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-26T18:49:10.256430" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-26T18:49:09.255918" elapsed="1.000689"/>
+</kw>
+<status status="PASS" start="2025-03-26T18:49:06.133240" elapsed="4.123557"/>
+</kw>
+<status status="PASS" start="2025-03-26T18:49:06.132950" elapsed="4.123947"/>
+</kw>
+<kw name="And acesso a sessão de Input" owner="homePage">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-26T18:49:10.257831" level="INFO">Clicking element '//a[text()=(' Edit ')]'.</msg>
+<arg>${sessaoInput}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-26T18:49:10.257659" elapsed="0.101908"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-26T18:49:12.360001" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-26T18:49:10.359740" elapsed="2.000358"/>
+</kw>
+<status status="PASS" start="2025-03-26T18:49:10.257365" elapsed="2.102819"/>
+</kw>
+<kw name="And insiro o nome completo" owner="inputPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-26T18:49:12.360827" level="INFO">Typing text 'FakerLibrary.Name' into text field '//input[@id='fullName']'.</msg>
+<arg>${fullName}</arg>
+<arg>${name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-26T18:49:12.360658" elapsed="0.075461"/>
+</kw>
+<status status="PASS" start="2025-03-26T18:49:12.360430" elapsed="0.075791"/>
+</kw>
+<status status="PASS" start="2025-03-26T18:49:06.132396" elapsed="6.304038"/>
+</test>
+<status status="PASS" start="2025-03-26T18:49:05.500052" elapsed="6.936923"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="testSuite01" id="s1" pass="1" fail="0" skip="0">testSuite01</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
