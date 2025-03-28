@@ -1,7 +1,6 @@
 *** Settings ***
 Resource        ../src/step-definitions/inputPage.robot
 Resource        ../src/step-definitions/homePage.robot
-Resource        ../src/step-definitions/common.robot
 
 
 *** Variables ***
